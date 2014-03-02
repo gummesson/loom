@@ -1,0 +1,16 @@
+//
+// ### `clearfix`
+//
+
+// The `clearfix` object is used to clear all floats inside an element.
+
+.clearfix,
+$clearfix
+  &:before,
+  &:after
+    display: block
+    height: 0
+    overflow: hidden
+    content: '\0020'
+  &:after
+    clear: both

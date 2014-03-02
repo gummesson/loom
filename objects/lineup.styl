@@ -1,0 +1,15 @@
+//
+// ### `lineup`
+//
+
+// The `lineup` object is used to remove the styling from a list element
+// and to make the list items (and anchor links) into inline block elements.
+//
+// It depends on the `bare` object.
+
+.lineup
+  @extend $bare
+  > li
+    &,
+    & > a
+      display: inline-block

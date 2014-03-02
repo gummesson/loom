@@ -1,0 +1,18 @@
+//
+// ### `widths`
+//
+
+// The `widths` utilities are used to set the width of an element.
+// Using a predefined breakpoint prefix will make them context-sensitive.
+
+for name, value in loom.width
+  .{name}
+    width: value
+
+if loom.breakpoint.useWidths
+  for point, break in loom.breakpoint
+    unless point == 'useWidths'
+      @media break
+        for name, value in loom.width
+          .{point}--{name}
+            width: value

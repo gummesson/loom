@@ -1,0 +1,31 @@
+{
+  "name": "loom",
+  "description": "An OOCSS library for Stylus.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gummesson/loom.git"
+  },
+  "homepage": "https://github.com/gummesson/loom",
+  "version": "1.0.0",
+  "authors": [
+    "Ellen Gummesson <ellengummesson@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "stylus",
+    "framework",
+    "library",
+    "oocss",
+    "bem"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json",
+    "gulpfile.js",
+    "README.md"
+  ]
+}

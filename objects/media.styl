@@ -1,0 +1,23 @@
+//
+// ### `media`
+//
+
+// The `media` object is used to place an image and text-like content
+// side-by-side.
+
+.media
+  display: block
+  @extend $clearfix
+
+.media__figure
+  float: left
+  margin-right: loom.base.spacingUnit
+
+.media__figure--rev
+  float: right
+  margin-left: loom.base.spacingUnit
+
+.media__body
+  margin-top: 0
+  margin-bottom: 0
+  overflow: hidden

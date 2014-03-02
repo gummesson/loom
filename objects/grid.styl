@@ -1,0 +1,18 @@
+//
+// ### `grid`
+//
+
+// The `grid` object is used to build a grid-based layout.
+//
+// It depends on the `clearfix` object and utilizes the `widths` utilities.
+
+// 1. Make negative margins work in Internet Explorer 8.
+
+.grid
+  position: relative // [1]
+  margin-left: unquote('-' + loom.base.spacingUnit)
+  @extend $clearfix
+
+.grid__item
+  float: left
+  padding-left: loom.base.spacingUnit

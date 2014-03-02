@@ -1,0 +1,15 @@
+//
+// ### `stack`
+//
+
+// The `stack` object is used to remove the styling from a list element
+// and to make the list items (and anchor links) into block elements.
+//
+// It depends on the `bare` object.
+
+.stack
+  @extend $bare
+  > li
+    &,
+    & > a
+      display: block
