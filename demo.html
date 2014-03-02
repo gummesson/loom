@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loom: an OOCSS library for Stylus</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+  <link rel="stylesheet" href="style.min.css">
+  <meta name="description" content="Loom is an OOCSS-inspired library with a small but useful collection of helpers, objects and utilities for Stylus.">
+  <meta name="canonical" content="http://ellengummesson.com/loom/">
+  <meta name="author" content="http://ellengummesson.com/">
+</head>
+<body>
+  <header class="head">
+    <div class="banner">
+      <div class="island">
+        <div class="wrap">
+          <h1 class="kilo logo">
+            <a class="shh" href="/loom/">Loom</a>
+          </h1><!-- /logo -->
+        </div><!-- /wrap -->
+      </div><!-- /island -->
+    </div><!-- /banner -->
+  </header><!-- /head -->
+  <main class="main">
+    <div class="island">
+      <div class="wrap">
+        <article class="page">
+          <h1 id="panel">Demo</h1>
+          <h2 id="helpers">Helpers</h2>
+          <section class="space--below" id="lead">
+            <h3>lead</h3>
+            <p class="lead">Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut. Sunt ratione aliquid deserunt dicta quos ab debitis.</p>
+          </section><!-- #lead -->
+          <section class="space" id="milli">
+            <h3>milli</h3>
+            <p class="milli">Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut. Sunt ratione aliquid deserunt dicta quos ab debitis.</p>
+          </section><!-- #milli -->
+          <section class="space" id="micro">
+            <h3>micro</h3>
+            <p class="micro">Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut. Sunt ratione aliquid deserunt dicta quos ab debitis.</p>
+          </section><!-- #micro -->
+          <section class="space" id="kilo">
+            <h3>kilo</h3>
+            <h1 class="kilo">Heading</h1>
+          </section><!-- #kilo -->
+          <section class="space" id="mega">
+            <h3>mega</h3>
+            <h1 class="mega">Heading</h1>
+          </section><!-- #mega -->
+          <section class="space" id="giga">
+            <h3>giga</h3>
+            <h1 class="giga">Heading</h1>
+          </section><!-- #giga -->
+          <h2 id="objects">Objects</h2>
+          <section class="space" id="space">
+            <h3>space</h3>
+            <div class="panel space--below">
+              <p class="space">Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut. Sunt ratione aliquid deserunt dicta quos ab debitis.</p>
+            </div>
+            <div class="panel space--below">
+              <p class="space--above cramp--below">Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut. Sunt ratione aliquid deserunt dicta quos ab debitis.</p>
+            </div>
+            <div class="panel space--below">
+              <p class="space--below cramp--above">Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut. Sunt ratione aliquid deserunt dicta quos ab debitis.</p>
+            </div>
+          </section><!-- #space -->
+          <section class="space" id="cramp">
+            <h3>cramp</h3>
+            <div class="panel space--below">
+              <p class="cramp">Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut. Sunt ratione aliquid deserunt dicta quos ab debitis.</p>
+            </div>
+            <div class="panel space--below">
+              <p class="cramp--above space--below">Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut. Sunt ratione aliquid deserunt dicta quos ab debitis.</p>
+            </div>
+            <div class="panel space--below">
+              <p class="cramp--below space--above">Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut. Sunt ratione aliquid deserunt dicta quos ab debitis.</p>
+            </div>
+          </section><!-- #cramp -->
+          <section class="space" id="shh">
+            <h3>shh</h3>
+            <h1>
+              <a class="shh" href="#shh">Heading</a>
+            </h1>
+            <p class="shh">Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam <a href="#shh">reprehenderit dolore earum</a> incidunt doloribus ut. Sunt ratione aliquid deserunt dicta quos ab debitis.</p>
+          </section><!-- #shh -->
+          <section class="space" id="bare">
+            <h3>bare</h3>
+            <ul class="bare">
+              <li>One</li>
+              <li>Two</li>
+              <li>Three</li>
+              <li>Four</li>
+            </ul><!-- /bare -->
+          </section><!-- #bare -->
+          <section class="space" id="stack">
+            <h3>stack</h3>
+            <ul class="stack">
+              <li>
+                <a href="#stack">One</a>
+                <span>Two</span>
+              </li>
+              <li>
+                <a href="#stack">Three</a>
+                <span>Four</span>
+              </li>
+            </ul><!-- /stack -->
+          </section><!-- #stack -->
+          <section class="space" id="lineup">
+            <h3>lineup</h3>
+            <ul class="lineup">
+              <li>
+                <a href="#lineup">One</a>
+                <span>Two</span>
+              </li>
+              <li>
+                <a href="#lineup">Three</a>
+                <span>Four</span>
+              </li>
+            </ul><!-- /lineup -->
+          </section><!-- #lineup -->
+          <section class="space" id="island">
+            <h3>island</h3>
+            <div class="island panel">
+              <p>Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut. Sunt ratione aliquid deserunt dicta quos ab debitis.</p>
+            </div><!-- /island -->
+            <h3>Islet</h3>
+            <div class="islet panel">
+              <p>Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut. Sunt ratione aliquid deserunt dicta quos ab debitis.</p>
+            </div><!-- /islet -->
+          </section><!-- #island -->
+          <section class="space" id="media">
+            <h3>media</h3>
+            <div class="media space--below">
+              <img class="media__figure" src="http://placehold.it/64x64" alt="">
+              <p class="media__body">Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut.</p>
+            </div><!-- /media -->
+            <div class="media">
+              <img class="media__figure--rev" src="http://placehold.it/64x64" alt="">
+              <p class="media__body">Adipisicing tempore facilis omnis recusandae laudantium odio. Quis quisquam reprehenderit dolore earum incidunt doloribus ut.</p>
+            </div><!-- /media -->
+          </section><!-- #media -->
+          <section class="space--above" id="grid">
+            <h3>grid</h3>
+            <div class="grid">
+              <div class="grid__item one-of-four">
+                <p class="panel">1/4</p>
+              </div><!-- /grid__item -->
+              <div class="grid__item one-of-four">
+                <p class="panel">1/4</p>
+              </div><!-- /grid__item -->
+              <div class="grid__item one-of-four">
+                <p class="panel">1/4</p>
+              </div><!-- /grid__item -->
+              <div class="grid__item one-of-four">
+                <p class="panel">1/4</p>
+              </div><!-- /grid__item -->
+            </div><!-- /grid -->
+            <div class="grid">
+              <div class="grid__item one-of-three">
+                <p class="panel">1/3</p>
+              </div><!-- /grid__item -->
+              <div class="grid__item one-of-three">
+                <p class="panel">1/3</p>
+              </div><!-- /grid__item -->
+              <div class="grid__item one-of-three">
+                <p class="panel">1/3</p>
+              </div><!-- /grid__item -->
+            </div><!-- /grid -->
+            <div class="grid">
+              <div class="grid__item one-of-two">
+                <p class="panel">1/2</p>
+              </div><!-- /grid__item -->
+              <div class="grid__item one-of-two">
+                <p class="panel">1/2</p>
+              </div><!-- /grid__item -->
+            </div><!-- /grid -->
+            <div class="grid">
+              <div class="grid__item two-of-three">
+                <p class="panel">2/3</p>
+              </div><!-- /grid__item -->
+              <div class="grid__item one-of-three">
+                <p class="panel">1/3</p>
+              </div><!-- /grid__item -->
+            </div><!-- /grid -->
+            <div class="grid">
+              <div class="grid__item three-of-four">
+                <p class="panel">3/4</p>
+              </div><!-- /grid__item -->
+              <div class="grid__item one-of-four">
+                <p class="panel">1/4</p>
+              </div><!-- /grid__item -->
+            </div><!-- /grid -->
+            <div class="grid">
+              <div class="grid__item one-of-one">
+                <p class="panel">1/1</p>
+              </div><!-- /grid__item -->
+            </div><!-- /grid -->
+          </section><!-- #grid -->
+        </article><!-- /page -->
+      </div><!-- /wrap -->
+    </div><!-- /island -->
+  </main><!-- /main -->
+  <footer class="foot">
+    <div class="banner">
+      <div class="islet">
+        <div class="wrap">
+          <p class="milli cramp--below">
+            Made with &hearts; by <a class="shh" href="http://ellengummesson.com/">Ellen Gummesson</a>
+          </p>
+          <p class="milli cramp--above">
+            <a class="shh" href="https://github.com/gummesson/loom">Source on GitHub</a>
+          </p>
+        </div><!-- /wrap -->
+      </div><!-- /islet -->
+    </div><!-- /banner -->
+  </footer><!-- /foot -->
+</body>
+</html>
