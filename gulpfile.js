@@ -28,7 +28,7 @@ gulp.task('build', function() {
 
 gulp.task('compress', ['build'], function() {
   return gulp
-    .src('build/loom.css')
+    .src('_build/loom.css')
     .pipe(minify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('_build/'));
