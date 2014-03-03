@@ -498,11 +498,13 @@ th {
   list-style: none;
 }
 .lineup > li,
-.lineup > li > a {
+.lineup > li > a,
+.lineup__item {
   display: inline-block;
 }
 .stack > li,
-.stack > li > a {
+.stack > li > a,
+.stack__item {
   display: block;
 }
 .island,
