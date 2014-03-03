@@ -12,7 +12,7 @@ bower install loom --save
 
 Loom is primarily designed for importing the objects that you need and to leave out the rest. However, it does come with an `index.styl` file that you can use to import the whole library at one fell swoop.
 
-Loom uses a hash to set the base values used throughout the library:
+It uses a hash to set the base values used throughout the library:
 
 ~~~ javascript
 loom = {}
