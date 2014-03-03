@@ -18,5 +18,8 @@
     "gulp-rename": "^1.1.0",
     "gulp-markdown": "^0.1.2",
     "highlight.js": "^8.0.0"
+  },
+  "dependencies": {
+    "gulp-minify-css": "^0.3.0"
   }
 }
