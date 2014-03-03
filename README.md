@@ -174,6 +174,24 @@ The `shh` object is used to disguise anchor links to make them appear like the s
 </h1>
 ~~~
 
+### button
+
+The `button` object is used to make an element into a button.
+
+It depends on a modifier class for the actual styling.
+
+~~~ html
+<a class="button" href="/">
+  <!-- ... -->
+</a>
+
+<button class="button">
+  <!-- ... -->
+</button>
+
+<input class="button" type="button" value="Button">
+~~~
+
 ### bare
 
 The `bare` object is used to remove the styling from a list element.

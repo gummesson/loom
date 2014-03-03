@@ -1,0 +1,31 @@
+//
+// ### `button`
+//
+
+// The `button` object is used to make an element into a button.
+//
+// It depends on a modifier class for the actual styling, for example:
+//
+//    .button--brand
+//      background-color: #000
+//      &,
+//      &:hover,
+//      &focus,
+//      &:active,
+//      &:visited
+//        color: #fff
+
+.button
+  display: inline-block
+  padding: (loom.base.spacingUnit * 0.25) (loom.base.spacingUnit * 0.5)
+  margin: 0
+  font-family: inherit
+  font-size: loom.base.fontSize
+  line-height: inherit
+  text-decoration: none
+  white-space: nowrap
+  cursor: pointer
+  border: none
+  &:hover,
+  &:focus
+    outline: none
