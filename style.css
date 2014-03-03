@@ -507,8 +507,27 @@ th {
 .stack__item {
   display: block;
 }
+.button {
+  display: inline-block;
+  padding: 6px 12px;
+  padding: 0.375rem 0.75rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+}
+.button:hover,
+.button:focus {
+  outline: none;
+}
 .island,
-.islet {
+.islet,
+.landmark {
   display: block;
 }
 .island {
@@ -518,6 +537,10 @@ th {
 .islet {
   padding: 12px;
   padding: 0.75rem;
+}
+.landmark {
+  padding: 48px;
+  padding: 3rem;
 }
 .wrap {
   max-width: 544px;
@@ -533,7 +556,7 @@ th {
   display: block;
   height: 0;
   overflow: hidden;
-  content: '\0020';
+  content: "\0020";
 }
 .clearfix:after,
 .media:after,
@@ -665,6 +688,15 @@ pre {
 
 .banner {
   background-color: #95a5a6;
+  color: #fdfdfd;
+}
+
+.button--brand,
+.button--brand:hover,
+.button--brand:focus,
+.button--brand:active,
+.button--brand:visited {
+  background-color: #4a5758;
   color: #fdfdfd;
 }
 
