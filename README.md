@@ -191,6 +191,8 @@ The `bare` object is used to remove the styling from a list element.
 
 The `stack` object is used to remove the styling from a list element and to make the list items (and anchor links) into block elements.
 
+It can also be used on any non-list elements with in conjunction with `.stack__item`.
+
 It depends on the `bare` object.
 
 ~~~ html
@@ -204,6 +206,15 @@ It depends on the `bare` object.
     </a>
   </li>
 </ul>
+
+<div class="stack">
+  <div class="stack__item">
+    <!-- ... -->
+  </div>
+  <div class="stack__item">
+    <!-- ... -->
+  </div>
+</div>
 ~~~
 
 ### lineup
