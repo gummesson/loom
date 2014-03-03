@@ -187,36 +187,6 @@ The `bare` object is used to remove the styling from a list element.
 </ul>
 ~~~
 
-### stack
-
-The `stack` object is used to remove the styling from a list element and to make the list items (and anchor links) into block elements.
-
-It can also be used on non-list elements in conjunction with `.stack__item`.
-
-It depends on the `bare` object.
-
-~~~ html
-<ul class="stack">
-  <li>
-    <!-- ... -->
-  </li>
-  <li>
-    <a href="/">
-      <!-- ... -->
-    </a>
-  </li>
-</ul>
-
-<div class="stack">
-  <div class="stack__item">
-    <!-- ... -->
-  </div>
-  <div class="stack__item">
-    <!-- ... -->
-  </div>
-</div>
-~~~
-
 ### lineup
 
 The `lineup` object is used to remove styling from a list element and to make the list items (and anchor links) into inline block elements.
@@ -242,6 +212,36 @@ It depends on the `bare` object.
     <!-- ... -->
   </div>
   <div class="lineup__item">
+    <!-- ... -->
+  </div>
+</div>
+~~~
+
+### stack
+
+The `stack` object is used to remove the styling from a list element and to make the list items (and anchor links) into block elements.
+
+It can also be used on non-list elements in conjunction with `.stack__item`.
+
+It depends on the `bare` object.
+
+~~~ html
+<ul class="stack">
+  <li>
+    <!-- ... -->
+  </li>
+  <li>
+    <a href="/">
+      <!-- ... -->
+    </a>
+  </li>
+</ul>
+
+<div class="stack">
+  <div class="stack__item">
+    <!-- ... -->
+  </div>
+  <div class="stack__item">
     <!-- ... -->
   </div>
 </div>
