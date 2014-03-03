@@ -261,6 +261,10 @@ The `island` object is used to add paddings to an element and to make it into a 
 <div class="islet">
   <!-- ... -->
 </div>
+
+<div class="landmark">
+  <!-- ... -->
+</div>
 ~~~
 
 ### wrap
