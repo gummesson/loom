@@ -2,6 +2,8 @@
 
 [Loom](https://github.com/gummesson/loom) is an [OOCSS](http://oocss.org/)-inspired library with a small but useful collection of helpers, objects and utilities for [Stylus](http://learnboost.github.io/stylus/).
 
+It uses a modified [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) notation for the class names.
+
 ## Installation
 
 ~~~ bash
