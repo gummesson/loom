@@ -520,6 +520,7 @@ th {
   white-space: nowrap;
   cursor: pointer;
   border: none;
+  border-radius: 0;
 }
 .button:hover,
 .button:focus {
