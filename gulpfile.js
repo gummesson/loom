@@ -17,6 +17,7 @@ gulp.task('build', function() {
     .src('index.styl')
     .pipe(stylus())
     .pipe(recess({
+      noOverqualifying: false,
       noUnderscores: false,
       noUniversalSelectors: false
     }))
