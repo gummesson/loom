@@ -526,6 +526,11 @@ th {
 .button:focus {
   outline: none;
 }
+.button.is-disabled {
+  cursor: default;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
 .island,
 .islet,
 .landmark {
@@ -658,11 +663,6 @@ a:active {
   color: #95a5a6;
 }
 
-a:active {
-  position: relative;
-  top: 1px;
-}
-
 code {
   font-family: Menlo, Monaco, Consolas, "DejaVu Sans Mono", monospace;
   font-size: 0.875em;
@@ -709,7 +709,8 @@ pre {
   font-weight: bold;
 }
 
-.hljs-literal {
+.hljs-literal,
+.hljs-class {
   color: #458;
   font-weight: bold;
 }

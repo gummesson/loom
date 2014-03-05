@@ -28,7 +28,7 @@
         <article class="page">
         <h1 id="intro">An OOCSS library for Stylus</h1>
 <p><a href="https://github.com/gummesson/loom">Loom</a> is an <a href="http://oocss.org/">OOCSS</a>-inspired library with a small but useful collection of helpers, objects and utilities for <a href="http://learnboost.github.io/stylus/">Stylus</a>.</p>
-<p>It uses a modified <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a> notation for the class names.</p>
+<p>It uses a modified <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a> notation for the class names and the <code>is-</code> prefix for different states.</p>
 <h2 id="installation">Installation</h2>
 <pre><code class="bash">bower install loom --save
 </code></pre>
@@ -38,9 +38,9 @@
 <pre><code class="javascript">loom = {}
 
 loom.base = {
-  fontSize: <span class="hljs-number">1rem</span>,
-  spacingUnit: <span class="hljs-number">1.5rem</span>,
-  wrapWidth: <span class="hljs-number">64rem</span>
+  fontSize: <span class="hljs-number">1</span>rem,
+  spacingUnit: <span class="hljs-number">1.5</span>rem,
+  wrapWidth: <span class="hljs-number">64</span>rem
 }
 
 loom.breakpoint = {
@@ -51,12 +51,12 @@ loom.breakpoint = {
 }
 
 loom.width = {
-  <span class="hljs-string">'one-of-one'</span>: <span class="hljs-number">100%</span>,
-  <span class="hljs-string">'three-of-four'</span>: <span class="hljs-number">75%</span>,
-  <span class="hljs-string">'two-of-three'</span>: <span class="hljs-number">66.666%</span>,
-  <span class="hljs-string">'one-of-two'</span>: <span class="hljs-number">50%</span>,
-  <span class="hljs-string">'one-of-three'</span>: <span class="hljs-number">33.333%</span>,
-  <span class="hljs-string">'one-of-four'</span>: <span class="hljs-number">25%</span>
+  <span class="hljs-string">'one-of-one'</span>: <span class="hljs-number">100</span>%,
+  <span class="hljs-string">'three-of-four'</span>: <span class="hljs-number">75</span>%,
+  <span class="hljs-string">'two-of-three'</span>: <span class="hljs-number">66.666</span>%,
+  <span class="hljs-string">'one-of-two'</span>: <span class="hljs-number">50</span>%,
+  <span class="hljs-string">'one-of-three'</span>: <span class="hljs-number">33.333</span>%,
+  <span class="hljs-string">'one-of-four'</span>: <span class="hljs-number">25</span>%
 }
 </code></pre>
 <p><strong>Tip:</strong> use a tool like <a href="https://github.com/robwierzbowski/node-pixrem">Pixrem</a> in your build process to support older browsers when using the defaults.</p>
@@ -64,7 +64,7 @@ loom.width = {
 <h3 id="box-sizing">box-sizing</h3>
 <p>The <code>box-sizing</code> file is used for globally applying <code>box-sizing: border-box;</code> to all elements.</p>
 <p>It needs to be included in order for Loom to work properly.</p>
-<pre><code class="css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'&lt;path&gt;/loom/core/box-sizing'</span></span>
+<pre><code class="scss"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'&lt;path&gt;/loom/core/box-sizing'</span></span>
 </code></pre>
 <p><strong>Tip:</strong> use a tool like <a href="https://github.com/ai/autoprefixer">autoprefixer</a> in your build process to add the appropriate vendor prefixes for the <code>box-sizing</code> property.</p>
 <h2 id="helpers">Helpers</h2>
@@ -373,6 +373,28 @@ loom.width = {
 <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"desk--one-of-four"</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- ... --&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<h3 id="states">states</h3>
+<p>The <code>states</code> utilities are used for adding various state-based modifications to a block.</p>
+<p>A state should be scoped to a specific context.</p>
+<h4 id="is-hidden">is-hidden</h4>
+<pre><code class="scss"><span class="hljs-class">.thing</span><span class="hljs-class">.is-hidden</span>
+  <span class="hljs-function">is-hidden()</span>
+</code></pre>
+<h4 id="is-visible">is-visible</h4>
+<pre><code class="css"><span class="hljs-class">.thing</span><span class="hljs-class">.is-visible</span>
+  <span class="hljs-tag">is-visible</span>()
+</code></pre>
+<h4 id="is-disabled">is-disabled</h4>
+<pre><code class="css"><span class="hljs-class">.thing</span><span class="hljs-class">.is-disabled</span>
+  <span class="hljs-tag">is-disabled</span>()
+
+<span class="hljs-class">.thing</span><span class="hljs-class">.is-disabled</span>
+  <span class="hljs-tag">is-disabled</span>(<span class="hljs-tag">true</span>) <span class="hljs-comment">/* Use opacity */</span>
+</code></pre>
+<h4 id="is-truncated">is-truncated</h4>
+<pre><code class="css"><span class="hljs-class">.thing</span><span class="hljs-class">.is-truncated</span>
+  <span class="hljs-tag">is-truncated</span>()
 </code></pre>
         </article><!-- /page -->
       </div><!-- /wrap -->
