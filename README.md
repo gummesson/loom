@@ -2,7 +2,7 @@
 
 [Loom](https://github.com/gummesson/loom) is an [OOCSS](http://oocss.org/)-inspired library with a small but useful collection of helpers, objects and utilities for [Stylus](http://learnboost.github.io/stylus/).
 
-It uses a modified [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) notation for the class names.
+It uses a modified [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) notation for the class names and the `is-` prefix for different states.
 
 ## Installation
 
@@ -52,7 +52,7 @@ The `box-sizing` file is used for globally applying `box-sizing: border-box;` to
 
 It needs to be included in order for Loom to work properly.
 
-~~~ css
+~~~ scss
 @import '<path>/loom/core/box-sizing'
 ~~~
 
@@ -465,6 +465,43 @@ The `widths` utilities are used to set the width of an element. Using a predefin
 <div class="desk--one-of-four">
   <!-- ... -->
 </div>
+~~~
+
+### states
+
+The `states` utilities are used for adding various state-based modifications to a block.
+
+A state should be scoped to a specific context.
+
+#### is-hidden
+
+~~~ scss
+.thing.is-hidden
+  is-hidden()
+~~~
+
+#### is-visible
+
+~~~ css
+.thing.is-visible
+  is-visible()
+~~~
+
+#### is-disabled
+
+~~~ css
+.thing.is-disabled
+  is-disabled()
+
+.thing.is-disabled
+  is-disabled(true) /* Add opacity */
+~~~
+
+#### is-truncated
+
+~~~ css
+.thing.is-truncated
+  is-truncated()
 ~~~
 
 ## Acknowledgements

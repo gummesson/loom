@@ -1,0 +1,30 @@
+//
+// ### `states`
+//
+
+// The `states` utilities are used for adding various state-based
+// modifications to a block.
+//
+// A state should be scoped to a specific context, for example:
+//
+//    .block.is-disabled
+//      is-disabled()
+
+is-hidden()
+  display: none
+  visibility: hidden
+
+is-visible()
+  display: block
+  visibilty: visible
+
+is-disabled(fade = false)
+  cursor: default
+  if fade
+    opacity: 0.5
+    filter: unquote('alpha(opacity=50)')
+
+is-truncated()
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
