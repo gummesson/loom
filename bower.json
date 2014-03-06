@@ -26,6 +26,7 @@
     "tests",
     "package.json",
     "gulpfile.js",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ]
 }
