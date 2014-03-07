@@ -494,7 +494,7 @@ A state should be scoped to a specific context.
   is-disabled()
 
 .thing.is-disabled
-  is-disabled(true) /* Add opacity */
+  is-disabled(true) /* With opacity */
 ~~~
 
 #### is-truncated
@@ -502,6 +502,25 @@ A state should be scoped to a specific context.
 ~~~ css
 .thing.is-truncated
   is-truncated()
+~~~
+
+#### is-fixed
+
+~~~ css
+.thing.is-fixed
+  is-fixed() /* Fixed to the top */
+
+.thing.is-fixed
+  is-fixed(top)
+
+.thing.is-fixed
+  is-fixed(right)
+
+.thing.is-fixed
+  is-fixed(left)
+
+.thing.is-fixed
+  is-fixed(bottom)
 ~~~
 
 ## Acknowledgements
