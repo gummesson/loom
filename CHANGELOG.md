@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0 (2013-03-08)
+
+- Move and rename `useWidths` from `loom.breakpoints` to `fluid` in `loom.width`.
+- Rename `.milli` to `.centi`.
+- Rename `.micro` to `.milli`.
+
 ## 1.5.0 (2014-03-08)
 
 - Add `.breadcrumb`.
