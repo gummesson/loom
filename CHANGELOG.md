@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.0 (2014-03-08)
+
+- Add `.breadcrumb`.
+
 ## 1.4.0 (2014-03-07)
 
 - Add `is-fixed()`.
