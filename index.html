@@ -47,11 +47,11 @@ loom.base = {
 loom.breakpoint = {
   palm: <span class="hljs-string">'screen and (max-width: 480px)'</span>,
   lap: <span class="hljs-string">'screen and (min-width: 769px)'</span>,
-  desk: <span class="hljs-string">'screen and (min-width: 1024px)'</span>,
-  useWidths: <span class="hljs-literal">true</span>
+  desk: <span class="hljs-string">'screen and (min-width: 1024px)'</span>
 }
 
 loom.width = {
+  fluid: <span class="hljs-literal">true</span>,
   <span class="hljs-string">'one-of-one'</span>: <span class="hljs-number">100</span>%,
   <span class="hljs-string">'three-of-four'</span>: <span class="hljs-number">75</span>%,
   <span class="hljs-string">'two-of-three'</span>: <span class="hljs-number">66.666</span>%,
@@ -75,15 +75,15 @@ loom.width = {
   <span class="hljs-comment">&lt;!-- ... --&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-<h3 id="milli">milli</h3>
-<p>The <code>milli</code> object is used to make a typographic element slightly smaller than a normal paragraph.</p>
-<pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"milli"</span>&gt;</span>
+<h3 id="centi">centi</h3>
+<p>The <code>centi</code> object is used to make a typographic element slightly smaller than a normal paragraph.</p>
+<pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"centi"</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- ... --&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
-<h3 id="micro">micro</h3>
-<p>The <code>micro</code> object is used to make a typographic element much smaller than a normal paragraph.</p>
-<pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"micro"</span>&gt;</span>
+<h3 id="centi">centi</h3>
+<p>The <code>centi</code> object is used to make a typographic element much smaller than a normal paragraph.</p>
+<pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"centi"</span>&gt;</span>
   <span class="hljs-comment">&lt;!-- ... --&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 </code></pre>
@@ -435,10 +435,10 @@ loom.width = {
     <div class="banner">
       <div class="islet">
         <div class="wrap">
-          <p class="milli cramp--below">
+          <p class="centi cramp--below">
             Made with &hearts; by <a class="shh" href="http://ellengummesson.com/">Ellen Gummesson</a>
           </p>
-          <p class="milli cramp--above">
+          <p class="centi cramp--above">
             <a class="shh" href="https://github.com/gummesson/loom">Source on GitHub</a>
           </p>
         </div><!-- /wrap -->

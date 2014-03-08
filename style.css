@@ -425,7 +425,6 @@ th {
 }
 
 /*! Loom | MIT License | https://github.com/gummesson/loom */
-
 *,
 *:before,
 *:after {
@@ -436,11 +435,11 @@ th {
   font-size: 18px;
   font-size: 1.125rem;
 }
-.milli {
+.centi {
   font-size: 14px;
   font-size: 0.875rem;
 }
-.micro {
+.milli {
   font-size: 12px;
   font-size: 0.75rem;
 }
@@ -490,23 +489,6 @@ th {
 .shh a:visited {
   color: inherit;
 }
-.bare,
-.lineup,
-.stack {
-  padding-left: 0;
-  margin-left: 0;
-  list-style: none;
-}
-.lineup > li,
-.lineup > li > a,
-.lineup__item {
-  display: inline-block;
-}
-.stack > li,
-.stack > li > a,
-.stack__item {
-  display: block;
-}
 .button {
   display: inline-block;
   padding: 6px 12px;
@@ -530,6 +512,23 @@ th {
   cursor: default;
   opacity: 0.5;
   filter: alpha(opacity=50);
+}
+.bare,
+.lineup,
+.stack {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+}
+.lineup > li,
+.lineup > li > a,
+.lineup__item {
+  display: inline-block;
+}
+.stack > li,
+.stack > li > a,
+.stack__item {
+  display: block;
 }
 .island,
 .islet,
