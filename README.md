@@ -523,6 +523,26 @@ A state should be scoped to a specific context.
   is-fixed(bottom)
 ~~~
 
+### breadcumb
+
+The `breadcrumb` utility is used to add breadcrumb-like styling to an element.
+
+It should be used in conjunction with the `lineup` object.
+
+~~~ html
+<ol class="lineup">
+  <li class="breadcumb" data-crumb="»">
+    <a href="/">
+      <!-- ... -->
+    </a>
+  </li>
+  <li>
+    <!-- ... -->
+  </li>
+</ol>
+~~~
+
+
 ## Acknowledgements
 
 - [Harry Roberts](http://csswizardry.com/) for the `lead`, `milli`, `micro`, `kilo`, `mega`, `giga`, `bare` and `island` objects.
