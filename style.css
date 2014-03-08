@@ -615,6 +615,9 @@ th {
 .one-of-four {
   width: 25%;
 }
+.breadcrumb:after {
+  content: attr(data-crumb);
+}
 
 /* Website
    ========================================================================== */
