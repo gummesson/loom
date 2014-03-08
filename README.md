@@ -30,11 +30,11 @@ loom.base = {
 loom.breakpoint = {
   palm: 'screen and (max-width: 480px)',
   lap: 'screen and (min-width: 769px)',
-  desk: 'screen and (min-width: 1024px)',
-  useWidths: true
+  desk: 'screen and (min-width: 1024px)'
 }
 
 loom.width = {
+  fluid: true,
   'one-of-one': 100%,
   'three-of-four': 75%,
   'two-of-three': 66.666%,

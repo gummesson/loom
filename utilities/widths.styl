@@ -6,13 +6,14 @@
 // Using a predefined breakpoint prefix will make them context-sensitive.
 
 for name, value in loom.width
-  .{name}
-    width: value
+  unless name == 'fluid'
+    .{name}
+      width: value
 
-if loom.breakpoint.useWidths
+if loom.width.fluid
   for point, break in loom.breakpoint
-    unless point == 'useWidths'
-      @media break
-        for name, value in loom.width
+    @media break
+      for name, value in loom.width
+        unless name == 'fluid'
           .{point}--{name}
             width: value
