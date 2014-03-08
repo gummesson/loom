@@ -72,12 +72,12 @@ The `lead` object is used to make a typographic element slightly bigger than a n
 </p>
 ~~~
 
-### milli
+### centi
 
-The `milli` object is used to make a typographic element slightly smaller than a normal paragraph.
+The `centi` object is used to make a typographic element slightly smaller than a normal paragraph.
 
 ~~~ html
-<p class="milli">
+<p class="centi">
   <!-- ... -->
 </p>
 ~~~
@@ -547,7 +547,7 @@ It should be used in conjunction with the `lineup` object.
 
 ## Acknowledgements
 
-- [Harry Roberts](http://csswizardry.com/) for the `lead`, `milli`, `micro`, `kilo`, `mega`, `giga`, `bare` and `island` objects.
+- [Harry Roberts](http://csswizardry.com/) for the `lead`, `centi`, `micro`, `kilo`, `mega`, `giga`, `bare` and `island` objects.
 - [Rowan Manning](http://rowanmanning.com/) for the `space`, `cramp`, `stack`, `lineup` and `shh` objects.
 - [Nicolas Gallagher](http://nicolasgallagher.com/) for the `clearfix` object.
 - [Nicole Sullivan](http://www.stubbornella.org/) for the `media` object.
