@@ -4,6 +4,8 @@
 
 It uses a modified [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) notation for the class names and the `is-` prefix for different states.
 
+Although it's not required, using [normalize.css](https://github.com/necolas/normalize.css) with the library is highly recommended.
+
 ## Installation
 
 ~~~ bash
