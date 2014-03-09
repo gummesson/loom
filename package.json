@@ -1,6 +1,7 @@
 {
   "name": "loom",
-  "version": "2.0.0",
+  "description": "An OOCSS library for Stylus.",
+  "version": "2.0.1",
   "private": true,
   "repository": {
     "type": "git",
