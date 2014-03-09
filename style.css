@@ -500,9 +500,12 @@ th {
   line-height: inherit;
   text-decoration: none;
   white-space: nowrap;
+  vertical-align: middle;
   cursor: pointer;
+  background-image: none;
   border: none;
   border-radius: 0;
+  -webkit-appearance: none;
 }
 .button:hover,
 .button:focus {
