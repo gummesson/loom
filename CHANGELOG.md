@@ -1,6 +1,10 @@
 # Changelog
 
-## 2.0.0 (2013-03-08)
+## 2.0.1 (2014-03-09)
+
+- Override default Webkit/Firefox styling in `.button`.
+
+## 2.0.0 (2014-03-08)
 
 - Move and rename `useWidths` from `loom.breakpoints` to `fluid` in `loom.width`.
 - Rename `.milli` to `.centi`.
