@@ -22,7 +22,7 @@ gulp.task('build', function() {
       noUniversalSelectors: false
     }))
     .pipe(pixrem())
-    .pipe(prefix('last 2 versions'))
+    .pipe(prefix('last 2 versions', 'ie 9', 'ie 8'))
     .pipe(rename('loom.css'))
     .pipe(gulp.dest('_build/'));
 });
