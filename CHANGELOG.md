@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.1.0 (2014-03-16)
+
+### Features
+
+- Add `.ratio`.
+
+### Bug fixes
+
+- Add `:disabled` state to `.button`.
+
 ## 2.0.1 (2014-03-09)
 
 ### Bug fixes
