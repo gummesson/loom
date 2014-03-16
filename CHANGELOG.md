@@ -2,9 +2,13 @@
 
 ## 2.0.1 (2014-03-09)
 
+### Bug fixes
+
 - Override default Webkit/Firefox styling in `.button`.
 
 ## 2.0.0 (2014-03-08)
+
+### Changes
 
 - Move and rename `useWidths` from `loom.breakpoints` to `fluid` in `loom.width`.
 - Rename `.milli` to `.centi`.
@@ -12,9 +16,13 @@
 
 ## 1.5.0 (2014-03-08)
 
+### Features
+
 - Add `.breadcrumb`.
 
 ## 1.4.0 (2014-03-07)
+
+### Features
 
 - Add `is-fixed()`.
 
