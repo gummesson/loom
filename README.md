@@ -522,6 +522,25 @@ The `ratios` utilities are used to set the ratio of an element.
 </div>
 ~~~
 
+### breadcumb
+
+The `breadcrumb` utility is used to add breadcrumb-like styling to an element.
+
+It should be used in conjunction with the `lineup` object.
+
+~~~ html
+<ol class="lineup">
+  <li class="breadcumb" data-crumb="»">
+    <a href="/">
+      <!-- ... -->
+    </a>
+  </li>
+  <li>
+    <!-- ... -->
+  </li>
+</ol>
+~~~
+
 ### states
 
 The `states` utilities are used for adding various state-based modifications to a block.
@@ -577,26 +596,6 @@ A state should be scoped to a specific context.
 .thing.is-fixed
   is-fixed(bottom)
 ~~~
-
-### breadcumb
-
-The `breadcrumb` utility is used to add breadcrumb-like styling to an element.
-
-It should be used in conjunction with the `lineup` object.
-
-~~~ html
-<ol class="lineup">
-  <li class="breadcumb" data-crumb="»">
-    <a href="/">
-      <!-- ... -->
-    </a>
-  </li>
-  <li>
-    <!-- ... -->
-  </li>
-</ol>
-~~~
-
 
 ## Acknowledgements
 
