@@ -343,6 +343,22 @@ It depends on the `clearfix` object and utilizes the `widths` utilities.
 </div>
 ~~~
 
+### ratio
+
+The `ratio` object is used to handle responsive aspect ratios for embed content.
+
+It utilizes the `ratios` utilities.
+
+~~~ html
+<div class="ratio four-by-three">
+  <iframe|object|embed>
+</div>
+
+<div class="ratio three-by-one">
+  <img class="ratio__item" src="image.jpg" alt="...">
+</div>
+~~~
+
 ## Utilities
 
 ### widths
@@ -469,6 +485,43 @@ The `widths` utilities are used to set the width of an element. Using a predefin
 </div>
 ~~~
 
+### ratios
+
+The `ratios` utilities are used to set the ratio of an element.
+
+#### four-by-three
+
+~~~ html
+<div class="four-by-three">
+  <!-- ... -->
+</div>
+~~~
+
+#### sixteen-by-nine
+
+~~~ html
+<div class="sixteen-by-nine">
+  <!-- ... -->
+</div>
+~~~
+
+#### two-by-one
+
+~~~ html
+<div class="two-by-one">
+  <!-- ... -->
+</div>
+~~~
+
+#### three-by-one
+
+~~~ html
+
+<div class="three-by-one">
+  <!-- ... -->
+</div>
+~~~
+
 ### states
 
 The `states` utilities are used for adding various state-based modifications to a block.
@@ -549,7 +602,7 @@ It should be used in conjunction with the `lineup` object.
 
 - [Harry Roberts](http://csswizardry.com/) for the `lead`, `centi`, `milli`, `kilo`, `mega`, `giga`, `bare` and `island` objects.
 - [Rowan Manning](http://rowanmanning.com/) for the `space`, `cramp`, `stack`, `lineup` and `shh` objects.
-- [Nicolas Gallagher](http://nicolasgallagher.com/) for the `clearfix` object.
+- [Nicolas Gallagher](http://nicolasgallagher.com/) for the `clearfix` and `ratio` objects.
 - [Nicole Sullivan](http://www.stubbornella.org/) for the `media` object.
 
 ## License
