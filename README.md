@@ -337,7 +337,7 @@ It depends on the `clearfix` object and utilizes the `widths` utilities.
 
 ~~~ html
 <div class="grid">
-  <div class="grid__item">
+  <div class="grid__item one-of-one">
     <!-- ... -->
   </div>
 </div>
@@ -368,19 +368,19 @@ The `widths` utilities are used to set the width of an element. Using a predefin
 #### one-of-one
 
 ~~~ html
-<div class="one-of-one">
+<div class="grid__item one-of-one">
   <!-- ... -->
 </div>
 
-<div class="palm--one-of-one">
+<div class="grid__item palm--one-of-one">
   <!-- ... -->
 </div>
 
-<div class="lap--one-of-one">
+<div class="grid__item lap--one-of-one">
   <!-- ... -->
 </div>
 
-<div class="desk--one-of-one">
+<div class="grid__item desk--one-of-one">
   <!-- ... -->
 </div>
 ~~~
@@ -388,19 +388,19 @@ The `widths` utilities are used to set the width of an element. Using a predefin
 #### three-of-four
 
 ~~~ html
-<div class="three-of-four">
+<div class="grid__item three-of-four">
   <!-- ... -->
 </div>
 
-<div class="palm--three-of-four">
+<div class="grid__item palm--three-of-four">
   <!-- ... -->
 </div>
 
-<div class="lap--three-of-four">
+<div class="grid__item lap--three-of-four">
   <!-- ... -->
 </div>
 
-<div class="desk--three-of-four">
+<div class="grid__item desk--three-of-four">
   <!-- ... -->
 </div>
 ~~~
@@ -408,19 +408,19 @@ The `widths` utilities are used to set the width of an element. Using a predefin
 #### two-of-three
 
 ~~~ html
-<div class="two-of-three">
+<div class="grid__item two-of-three">
   <!-- ... -->
 </div>
 
-<div class="palm--two-of-three">
+<div class="grid__item palm--two-of-three">
   <!-- ... -->
 </div>
 
-<div class="lap--two-of-three">
+<div class="grid__item lap--two-of-three">
   <!-- ... -->
 </div>
 
-<div class="desk--two-of-three">
+<div class="grid__item desk--two-of-three">
   <!-- ... -->
 </div>
 ~~~
@@ -428,19 +428,19 @@ The `widths` utilities are used to set the width of an element. Using a predefin
 #### one-of-two
 
 ~~~ html
-<div class="one-of-two">
+<div class="grid__item one-of-two">
   <!-- ... -->
 </div>
 
-<div class="palm--one-of-two">
+<div class="grid__item palm--one-of-two">
   <!-- ... -->
 </div>
 
-<div class="lap--one-of-two">
+<div class="grid__item lap--one-of-two">
   <!-- ... -->
 </div>
 
-<div class="desk--one-of-two">
+<div class="grid__item desk--one-of-two">
   <!-- ... -->
 </div>
 ~~~
@@ -448,19 +448,19 @@ The `widths` utilities are used to set the width of an element. Using a predefin
 #### one-of-three
 
 ~~~ html
-<div class="one-of-three">
+<div class="grid__item one-of-three">
   <!-- ... -->
 </div>
 
-<div class="palm--one-of-three">
+<div class="grid__item palm--one-of-three">
   <!-- ... -->
 </div>
 
-<div class="lap--one-of-three">
+<div class="grid__item lap--one-of-three">
   <!-- ... -->
 </div>
 
-<div class="desk--one-of-three">
+<div class="grid__item desk--one-of-three">
   <!-- ... -->
 </div>
 ~~~
@@ -468,19 +468,19 @@ The `widths` utilities are used to set the width of an element. Using a predefin
 #### one-of-four
 
 ~~~ html
-<div class="one-of-four">
+<div class="grid__item one-of-four">
   <!-- ... -->
 </div>
 
-<div class="palm--one-of-four">
+<div class="grid__item palm--one-of-four">
   <!-- ... -->
 </div>
 
-<div class="lap--one-of-four">
+<div class="grid__item lap--one-of-four">
   <!-- ... -->
 </div>
 
-<div class="desk--one-of-four">
+<div class="grid__item desk--one-of-four">
   <!-- ... -->
 </div>
 ~~~
@@ -492,7 +492,7 @@ The `ratios` utilities are used to set the ratio of an element.
 #### four-by-three
 
 ~~~ html
-<div class="four-by-three">
+<div class="ratio four-by-three">
   <!-- ... -->
 </div>
 ~~~
@@ -500,7 +500,7 @@ The `ratios` utilities are used to set the ratio of an element.
 #### sixteen-by-nine
 
 ~~~ html
-<div class="sixteen-by-nine">
+<div class="ratio sixteen-by-nine">
   <!-- ... -->
 </div>
 ~~~
@@ -508,7 +508,7 @@ The `ratios` utilities are used to set the ratio of an element.
 #### two-by-one
 
 ~~~ html
-<div class="two-by-one">
+<div class="ratio two-by-one">
   <!-- ... -->
 </div>
 ~~~
@@ -517,7 +517,7 @@ The `ratios` utilities are used to set the ratio of an element.
 
 ~~~ html
 
-<div class="three-by-one">
+<div class="ratio three-by-one">
   <!-- ... -->
 </div>
 ~~~
