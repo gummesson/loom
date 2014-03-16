@@ -424,7 +424,7 @@ th {
   padding: 0;
 }
 
-/*! Loom | MIT License | https://github.com/gummesson/loom */
+/*! Loom | MIT License | github.com/gummesson/loom */
 *,
 *:before,
 *:after {
@@ -511,6 +511,7 @@ th {
 .button:focus {
   outline: none;
 }
+.button:disabled,
 .button.is-disabled {
   cursor: default;
   opacity: 0.5;
@@ -599,6 +600,27 @@ th {
   padding-left: 24px;
   padding-left: 1.5rem;
 }
+.ratio {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.ratio:before {
+  display: block;
+  content: "";
+}
+.ratio embed,
+.ratio iframe,
+.ratio object,
+.ratio__item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .one-of-one {
   width: 100%;
 }
@@ -616,6 +638,78 @@ th {
 }
 .one-of-four {
   width: 25%;
+}
+@media screen and (max-width: 480px) {
+  .palm--one-of-one {
+    width: 100%;
+  }
+  .palm--three-of-four {
+    width: 75%;
+  }
+  .palm--two-of-three {
+    width: 66.666%;
+  }
+  .palm--one-of-two {
+    width: 50%;
+  }
+  .palm--one-of-three {
+    width: 33.333%;
+  }
+  .palm--one-of-four {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .lap--one-of-one {
+    width: 100%;
+  }
+  .lap--three-of-four {
+    width: 75%;
+  }
+  .lap--two-of-three {
+    width: 66.666%;
+  }
+  .lap--one-of-two {
+    width: 50%;
+  }
+  .lap--one-of-three {
+    width: 33.333%;
+  }
+  .lap--one-of-four {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .desk--one-of-one {
+    width: 100%;
+  }
+  .desk--three-of-four {
+    width: 75%;
+  }
+  .desk--two-of-three {
+    width: 66.666%;
+  }
+  .desk--one-of-two {
+    width: 50%;
+  }
+  .desk--one-of-three {
+    width: 33.333%;
+  }
+  .desk--one-of-four {
+    width: 25%;
+  }
+}
+.four-by-three:before {
+  padding-top: 75%;
+}
+.sixteen-by-nine:before {
+  padding-top: 56.25%;
+}
+.two-by-one:before {
+  padding-top: 50%;
+}
+.three-by-one:before {
+  padding-top: 33.333%;
 }
 .breadcrumb:after {
   content: attr(data-crumb);
