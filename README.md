@@ -516,7 +516,6 @@ The `ratios` utilities are used to set the ratio of an element.
 #### three-by-one
 
 ~~~ html
-
 <div class="ratio three-by-one">
   <!-- ... -->
 </div>
